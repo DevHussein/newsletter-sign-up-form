@@ -1,17 +1,14 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import SignupForm from "./signup/signup-form";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Signup Form" },
+    { name: "description", content: "Welcome to Newsletter!" },
   ];
 }
 
-export function loader({ context }: Route.LoaderArgs) {
-  return { message: context.VALUE_FROM_VERCEL };
-}
-
 export default function Home({ loaderData }: Route.ComponentProps) {
-  return <Welcome message={loaderData.message} />;
+  return <SignupForm />;
 }
