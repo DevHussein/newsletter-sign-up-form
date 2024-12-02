@@ -21,7 +21,7 @@ export function SignupSucess() {
         <div className="pt-[149px] pb-[263px] desktop:pt-12 desktop:pb-10">
           <img
             className="mb-10"
-            src="images/icon-success.svg"
+            src="/images/icon-success.svg"
             alt="Icon success"
           />
           <h1 className="mb-6 font-bold text-[40px] desktop:text-heading leading-[100%] tracking-[0px]">

@@ -66,7 +66,7 @@ function SignupForm() {
         <div className="block desktop:hidden">
           <img
             className="object-cover object-center"
-            src="images/illustration-sign-up-mobile.svg"
+            src="/images/illustration-sign-up-mobile.svg"
             alt="Signup image"
           />
         </div>
@@ -80,15 +80,15 @@ function SignupForm() {
             </p>
             <ul className="space-y-[.625rem]">
               <div className="flex items-start gap-x-4">
-                <img src="images/icon-list.svg" alt="Icon list" />
+                <img src="/images/icon-list.svg" alt="Icon list" />
                 <li>Product discovery and building what matters</li>
               </div>
               <div className="flex items-start gap-x-4">
-                <img src="images/icon-list.svg" alt="Icon list" />
+                <img src="/images/icon-list.svg" alt="Icon list" />
                 <li>Measuring to ensure updates are a success</li>
               </div>
               <div className="flex items-start gap-x-4">
-                <img src="images/icon-list.svg" alt="Icon list" />
+                <img src="/images/icon-list.svg" alt="Icon list" />
                 <li>And much more!</li>
               </div>
             </ul>
@@ -137,7 +137,7 @@ function SignupForm() {
         </div>
         <img
           className="hidden desktop:block desktop:object-cover desktop:object-center desktop:py-6 desktop:pr-6"
-          src="images/illustration-sign-up-desktop.svg"
+          src="/images/illustration-sign-up-desktop.svg"
           alt="Signup image"
         />
       </div>
