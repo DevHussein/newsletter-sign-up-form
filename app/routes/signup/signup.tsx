@@ -66,7 +66,7 @@ function SignupForm() {
         <div className="block desktop:hidden">
           <img
             className="object-cover object-center"
-            src="./images/illustration-sign-up-mobile.svg"
+            src="illustration-sign-up-mobile.svg"
             alt="Signup image"
           />
         </div>
@@ -80,15 +80,15 @@ function SignupForm() {
             </p>
             <ul className="space-y-[.625rem]">
               <div className="flex items-start gap-x-4">
-                <img src="./images/icon-list.svg" alt="Icon list" />
+                <img src="icon-list.svg" alt="Icon list" />
                 <li>Product discovery and building what matters</li>
               </div>
               <div className="flex items-start gap-x-4">
-                <img src="./images/icon-list.svg" alt="Icon list" />
+                <img src="icon-list.svg" alt="Icon list" />
                 <li>Measuring to ensure updates are a success</li>
               </div>
               <div className="flex items-start gap-x-4">
-                <img src="./images/icon-list.svg" alt="Icon list" />
+                <img src="icon-list.svg" alt="Icon list" />
                 <li>And much more!</li>
               </div>
             </ul>
@@ -127,7 +127,9 @@ function SignupForm() {
               disabled={
                 isSubmitting ||
                 Boolean(actionData?.errors) ||
-                Boolean(errors?.email)
+                Boolean(errors?.email) ||
+                !isDirty ||
+                !isValid
               }
               className="pt-[1.125rem] pb-[.875rem] pl-12 pr-[2.875rem] desktop:px-0 desktop:w-full bg-darkNavy active:bg-custom-gradient text-bodyBold text-white rounded-lg"
             >
@@ -137,7 +139,7 @@ function SignupForm() {
         </div>
         <img
           className="hidden desktop:block desktop:object-cover desktop:object-center desktop:py-6 desktop:pr-6"
-          src="./images/illustration-sign-up-desktop.svg"
+          src="illustration-sign-up-desktop.svg"
           alt="Signup image"
         />
       </div>

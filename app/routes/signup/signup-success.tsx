@@ -19,11 +19,7 @@ export function SignupSucess() {
     <main className="min-h-screen flex flex-col justify-center items-center font-sans antialiased desktop:bg-darkNavy">
       <div className="bg-white max-w-screen-mobile desktop:max-w-[504px] text-darkNavy px-6 desktop:px-16 desktop:pb-16 flex flex-col desktop:mx-[468px] desktop:my-[280px] rounded-[36px]">
         <div className="pt-[149px] pb-[263px] desktop:pt-12 desktop:pb-10">
-          <img
-            className="mb-10"
-            src="../images/icon-success.svg"
-            alt="Icon success"
-          />
+          <img className="mb-10" src="icon-success.svg" alt="Icon success" />
           <h1 className="mb-6 font-bold text-[40px] desktop:text-heading leading-[100%] tracking-[0px]">
             Thanks for subscribing!
           </h1>
