@@ -1,5 +1,4 @@
 import { useLoaderData, useNavigate } from "react-router";
-
 import { LoaderFunction } from "react-router";
 
 export const loader: LoaderFunction = async ({ request }) => {

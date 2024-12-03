@@ -80,7 +80,7 @@ function SignupForm() {
             </p>
             <ul className="space-y-[.625rem]">
               <div className="flex items-start gap-x-4">
-                <img src="/images/icon-list.svg" alt="Icon list" />
+                <img src={"/images/icon-list.svg"} alt="Icon list" />
                 <li>Product discovery and building what matters</li>
               </div>
               <div className="flex items-start gap-x-4">
@@ -103,7 +103,7 @@ function SignupForm() {
                 <label className="text-bodySmall" htmlFor="email">
                   Email address
                 </label>
-                {(errors?.email || actionData?.errors?.email) && (
+                {(errors?.email || (actionData?.errors?.email && !isValid)) && (
                   <p className="text-vermellion text-bodySmall">
                     {errors?.email?.message || actionData?.errors?.email}
                   </p>
@@ -111,7 +111,7 @@ function SignupForm() {
               </div>
               <input
                 className={`${
-                  errors.email || actionData?.errors?.email
+                  errors.email || (actionData?.errors?.email && !isValid)
                     ? "bg-vermellion bg-opacity-15 border border-vermellion text-vermellion "
                     : "bg-white text-darkNavy text-opacity-50 border-darkNavy border-opacity-25"
                 } border rounded-lg py-4 pl-6 text-body focus-visible:ring-0 active:focus:border-darkNavy active:focus:text-darkNavy`}
@@ -126,10 +126,8 @@ function SignupForm() {
               type="submit"
               disabled={
                 isSubmitting ||
-                Boolean(actionData?.errors) ||
-                Boolean(errors?.email) ||
-                !isDirty ||
-                !isValid
+                (Boolean(actionData?.errors) && !isValid) ||
+                Boolean(errors?.email)
               }
               className="pt-[1.125rem] pb-[.875rem] pl-12 pr-[2.875rem] desktop:px-0 desktop:w-full bg-darkNavy active:bg-custom-gradient text-bodyBold text-white rounded-lg"
             >
