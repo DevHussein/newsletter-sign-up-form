@@ -10,6 +10,7 @@ import {
   useNavigation,
   redirect,
 } from "react-router";
+import iconList from "/images/icon-list.svg";
 
 export function meta({}: MetaArgs) {
   return [
@@ -80,7 +81,7 @@ function SignupForm() {
             </p>
             <ul className="space-y-[.625rem]">
               <div className="flex items-start gap-x-4">
-                <img src={"/public/images/icon-list.svg"} alt="Icon list" />
+                <img src={iconList} alt="Icon list" />
                 <li>Product discovery and building what matters</li>
               </div>
               <div className="flex items-start gap-x-4">
