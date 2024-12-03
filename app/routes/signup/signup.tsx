@@ -80,7 +80,7 @@ function SignupForm() {
             </p>
             <ul className="space-y-[.625rem]">
               <div className="flex items-start gap-x-4">
-                <img src={"/images/icon-list.svg"} alt="Icon list" />
+                <img src={"/public/images/icon-list.svg"} alt="Icon list" />
                 <li>Product discovery and building what matters</li>
               </div>
               <div className="flex items-start gap-x-4">
