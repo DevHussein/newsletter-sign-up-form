@@ -6,7 +6,7 @@
       "dest": "/favicon.ico"
     },
     {
-      "src": "/public/images/(.*)",
+      "src": "/images/(.*)",
       "dest": "/images/$1"
     },
     {
