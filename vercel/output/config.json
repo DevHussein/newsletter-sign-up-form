@@ -6,6 +6,10 @@
       "dest": "/favicon.ico"
     },
     {
+      "src": "/public/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
     },
